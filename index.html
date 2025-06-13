@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot - Resmi Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://cdn.discordapp.com/avatars/1242820342523629648/8af08eea95fd12c615ede1b34314039c.webp?size=128" alt="Bot Logo" onerror="this.src='https://via.placeholder.com/40'"> 
+                    <span>HilalBot</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Ana Sayfa</a></li>
+                    <li><a href="#features">Özellikler</a></li>
+                    <li><a href="#about">Hakkında</a></li>
+                    <li><a href="#faq">S.S.S</a></li>
+                    <li><a href="https://discord.gg/3fJqSTjSwk" target="_blank" class="discord-btn">
+                        <i class="fab fa-discord"></i> Destek Sunucusu
+                    </a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Bölümü -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="HilalBot"> </h1>
+                <p>Moderasyon, müzik, oyunlar ve çok daha fazlası için tasarlanmış Discord botunuz</p>
+                <div class="hero-buttons">
+                    <a href="https://discord.com/oauth2/authorize?client_id=1242820342523629648&scope=bot&permissions=8" class="btn btn-primary">
+                        <i class="fas fa-robot"></i> Bot'u Davet Et
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-chevron-down"></i> Daha Fazla Keşfet
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="serverCount">0</span>
+                        <span class="stat-label">Sunucu</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="userCount">0</span>
+                        <span class="stat-label">Kullanıcı</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="commandCount">0</span>
+                        <span class="stat-label">Komut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://cdn.discordapp.com/avatars/1242820342523629648/8af08eea95fd12c615ede1b34314039c.webp?size=128" alt="Bot Showcase" onerror="this.src='https://via.placeholder.com/500x300'">
+                <div class="blob"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Özellikler Bölümü -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Özellikler</h2>
+                <p>Botumuzun sunduğu güçlü özelliklerle sunucunuzu geliştirin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Moderasyon</h3>
+                    <p>Otomatik moderasyon, filtreler, uyarılar ve kullanıcı yönetimi için güçlü araçlar</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Oyunlar</h3>
+                    <p>Kullanıcılarınızı eğlendirmek için birçok mini oyun ve aktivite</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>İstatistikler</h3>
+                    <p>Sunucunuz ve üyeleriniz için detaylı istatistikler ve grafikler</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-level-up-alt"></i>
+                    </div>
+                    <h3>Seviye Sistemi</h3>
+                    <p>Özel kartlar ve rol ödülleri ile gelişmiş seviye sistemi</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Özelleştirme</h3>
+                    <p>Sunucunuza özel ayarlar ve yapılandırmalar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot Hakkında Bölümü -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.discordapp.com/avatars/1242820342523629648/8af08eea95fd12c615ede1b34314039c.webp?size=128" alt="Bot Hakkında" onerror="this.src='https://via.placeholder.com/500x300'">
+                    <div class="discord-status online"></div>
+                </div>
+                <div class="about-text">
+                    <h2>Hakkımızda</h2>
+                    <p>Discord botumuz, sunucunuzu daha etkili ve eğlenceli hale getirmek için tasarlanmıştır. Gelişmiş moderasyon araçları, yüksek kaliteli müzik çalar, eğlence komutları ve daha birçok özellik ile donatılmıştır.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>7/24 Çalışma</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Düzenli Güncellemeler</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Ücretsiz Kullanım</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Hızlı Destek</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="https://discord.com/oauth2/authorize?client_id=1242820342523629648&scope=bot&permissions=8" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Botu Ekle
+                        </a>
+                        <a href="https://discord.gg/3fJqSTjSwk" class="btn btn-secondary">
+                            <i class="fab fa-discord"></i> Destek Sunucusu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SSS Bölümü -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sıkça Sorulan Sorular (S.S.S)</h2>
+                <p>Merak ettiğiniz soruların cevapları</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HilalBot'u Nasıl Sunucuma Davet Edebilirim?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HilalBot'u Sunucunuza Davet Etmek İçin Sitemizdeki En Yukarıda "Botu Davet Et" Butonuna Tıklayabilir Veya Destek Sunucumuza Katılıp Davet Bölümünden "Botu Davet Et" Yazısına Tıklayarak Botu Davet Edebilirsiniz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HilalBot Ücretlimi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Hayır!, Botumuz Tamamen Ücretsizdir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>HilalBot Neden Çalışmıyor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HilalBot'un Çalışmamasının Birkaç Nedeni Olabilir; Discord APİ'de Bir Sıkıntı Olabilir, Bot Kapalı Olabilir, Bot Bakımda Olabilir.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Komutları Nasıl Kullanabilirim?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HilalBot, Discord APİ'nin Kurallarına Uymak Amacıyla Slash (/) Komut Sistemini Kullanmaktadır. Komut Kullanmak İçin Sunucunuzda "/yardım" Komudunu Yazarak Komutları Öğrenebilirsiniz.</p>
+                    </div>
+                </div>
+                    <div class="faq-answer">
+                        <p>Premium özellikleri edinmek için destek sunucumuza katılabilir ve #premium-bilgi kanalındaki talimatları izleyebilirsiniz. Aylık veya yıllık abonelik seçeneklerimiz bulunmaktadır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://cdn.discordapp.com/attachments/123456789/123456789/bot-logo.png" alt="Bot Logo" onerror="this.src='https://via.placeholder.com/40'">
+                    <span>HilalBot</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Bağlantılar</h3>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#features">Özellikler</a></li>
+                            <li><a href="#about">Hakkında</a></li>
+                            <li><a href="#faq">S.S.S</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Destek</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/3fJqSTjSwk">Discord Sunucusu</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="https://discord.gg/3fJqSTjSwk" class="social-link"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 HilalBot - Tüm Hakları Saklıdır</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Geri Yukarı Butonu -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
